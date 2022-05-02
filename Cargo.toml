@@ -12,6 +12,7 @@ categories = ["gui", "wasm", "web-programming"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
 dotenv_codegen = "0.15.0"
+gloo = "0.7.0"
 log = "0.4.16"
 reqwest = { version = "0.11.10", features = ["json"] }
 serde = "1.0.137"
@@ -21,3 +22,17 @@ wasm-logger = "0.2.0"
 yew = "0.19"
 yew-hooks = "0.1.54"
 yew-router = "0.16.0"
+[dependencies.web-sys]
+version = "0.3.57"
+features = [
+  "Document",
+  "Element",
+  "Node",
+  "Window",
+	"DomStringMap",
+	"HtmlElement",
+  "HtmlCollection",
+  "HtmlInputElement",
+	"HtmlUListElement",
+	"HtmlLiElement"
+]
