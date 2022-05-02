@@ -1,0 +1,23 @@
+[package]
+name = "rust-cnode"
+version = "0.1.0"
+edition = "2021"
+description = "Template for starting a Yew project using Trunk"
+readme = "README.md"
+repository = "https://github.com/yewstack/yew-trunk-minimal-template"
+license = "MIT OR Apache-2.0"
+keywords = ["yew", "trunk"]
+categories = ["gui", "wasm", "web-programming"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+dotenv_codegen = "0.15.0"
+log = "0.4.16"
+reqwest = { version = "0.11.10", features = ["json"] }
+serde = "1.0.137"
+thiserror = "1.0.31"
+wasm-bindgen = "0.2.80"
+wasm-logger = "0.2.0"
+yew = "0.19"
+yew-hooks = "0.1.54"
+yew-router = "0.16.0"
